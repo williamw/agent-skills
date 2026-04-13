@@ -6,7 +6,7 @@ Custom skills for AI coding agents, compatible with the [Agent Skills](https://a
 
 | Skill | Description |
 |-------|-------------|
-| `composed-method-pattern` | Refactor TypeScript in a Kent Beck style: make code read like a story for humans |
+| `composed-method-pattern` | Refactor in a Kent Beck style: make code read like a story for humans |
 | `git-commit` | Iterative commit-then-verify workflow with message format and failure handling |
 | `git-draft-pr` | Create or update a GitHub pull request |
 | `git-rebase` | Interactive rebase-onto-main workflow with conflict resolution |
