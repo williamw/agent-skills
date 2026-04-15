@@ -1,0 +1,53 @@
+{
+  "name": "shot-scraper",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Bill Welense",
+  "published": "April 2026",
+  "abstract": "Visual verification and DOM/accessibility inspection for frontend development using shot-scraper. Teaches agents to screenshot dev servers after UI changes, extract rendered HTML, dump accessibility trees, and execute JavaScript for state inspection.",
+  "patterns": {
+    "total": 0,
+    "note": "Single SKILL.md with inline command patterns, no separate pattern files"
+  },
+  "files": {
+    "mainReference": "SKILL.md"
+  },
+  "triggers": [
+    "Screenshot a page",
+    "Check what the UI looks like",
+    "Verify frontend changes visually",
+    "Inspect the DOM",
+    "Check accessibility tree",
+    "Debug rendering issue",
+    "Extract rendered HTML",
+    "Run JavaScript against a page"
+  ],
+  "categories": {
+    "visual-verification": {
+      "priority": "CRITICAL",
+      "description": "Auto-screenshot after frontend file changes to verify UI"
+    },
+    "dom-inspection": {
+      "priority": "HIGH",
+      "description": "Extract rendered HTML, scoped by CSS selector"
+    },
+    "accessibility": {
+      "priority": "HIGH",
+      "description": "Dump Chromium accessibility tree for a11y verification"
+    },
+    "javascript-execution": {
+      "priority": "HIGH",
+      "description": "Run JS to extract component state, computed styles, errors"
+    }
+  },
+  "references": [
+    {
+      "title": "shot-scraper documentation",
+      "url": "https://shot-scraper.datasette.io/"
+    },
+    {
+      "title": "shot-scraper GitHub",
+      "url": "https://github.com/simonw/shot-scraper"
+    }
+  ]
+}
