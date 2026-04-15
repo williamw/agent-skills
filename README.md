@@ -8,6 +8,7 @@ Custom skills for AI coding agents, compatible with the [Agent Skills](https://a
 |-------|-------------|
 | `composed-method-pattern` | Refactor in a Kent Beck style: make code read like a story for humans |
 | `shot-scraper` | Visual verification and DOM/accessibility inspection for frontend development using shot-scraper |
+| `git-code-audit` | Audit a specific file or directory through git history first, then selectively read hotspot files |
 | `git-commit` | Iterative commit-then-verify workflow with message format and failure handling |
 | `git-draft-pr` | Create or update a GitHub pull request |
 | `git-rebase` | Interactive rebase-onto-main workflow with conflict resolution |
