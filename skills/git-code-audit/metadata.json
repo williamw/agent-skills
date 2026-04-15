@@ -1,0 +1,48 @@
+{
+  "name": "git-code-audit",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Bill Welense",
+  "published": "April 2026",
+  "abstract": "Analyze a specific part of a repository through git history first, then selectively read hotspot files to explain who works there, what has changed, where bugs cluster, and what code is worth reading next.",
+  "patterns": {
+    "total": 0,
+    "note": "Single SKILL.md with inline command patterns, no separate pattern files"
+  },
+  "files": {
+    "mainReference": "SKILL.md"
+  },
+  "triggers": [
+    "Tell me who works on this part of the code",
+    "Analyze what changed in a directory",
+    "Audit a file or folder through git history",
+    "Find churn hotspots in a specific path",
+    "Show bug hotspots for a code area",
+    "Read hotspot files after analyzing git history",
+    "Save a repo audit report"
+  ],
+  "categories": {
+    "git-history-analysis": {
+      "priority": "CRITICAL",
+      "description": "Use git history to understand ownership, churn, and risk before reading code"
+    },
+    "code-ownership": {
+      "priority": "HIGH",
+      "description": "Identify who contributes to a scoped code area and how ownership is concentrated"
+    },
+    "hotspot-analysis": {
+      "priority": "HIGH",
+      "description": "Correlate churn, bug-fix history, and firefighting signals to find risky files"
+    },
+    "selective-code-reading": {
+      "priority": "HIGH",
+      "description": "Read only the most relevant hotspot files after git-first analysis"
+    }
+  },
+  "references": [
+    {
+      "title": "The Git Commands I Run Before Reading Any Code",
+      "url": "https://piechowski.io/post/git-commands-before-reading-code/"
+    }
+  ]
+}
