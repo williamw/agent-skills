@@ -98,6 +98,14 @@ Returns Chromium's accessibility tree as JSON. Use for verifying semantic HTML, 
 uvx shot-scraper javascript <url> "js expression" -o .agents/screenshots/<timestamp>-<description>.json
 ```
 
+JavaScript execution should almost always use delayed execution so the page can hydrate/load before your expression runs:
+
+```bash
+uvx shot-scraper javascript <url> "js expression" -o .agents/screenshots/<timestamp>-<description>.json --wait 2000
+```
+
+Prefer `--wait-for "condition"` when there's a reliable readiness signal (for example a loaded class or element), and use `--wait` as a fallback when no clear signal exists.
+
 The JS expression's return value is saved as JSON. Use for:
 - Extracting component state: `"document.querySelector('#app').__vue__.$data"`
 - Checking computed styles: `"getComputedStyle(document.querySelector('.hero')).display"`
